@@ -12,9 +12,11 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  native_flutter_proxy: ^0.1.15
-  flutter_inappwebview: ^6.0.0-beta.12
-  url_launcher: ^6.1.6
+  #native_flutter_proxy: ^0.1.15
+  #flutter_inappwebview: ^6.0.0-beta.12
+  webview_flutter: ^3.0.4
+  #url_launcher: ^6.1.6
+  #http_proxy: ^1.2.1
 
 dev_dependencies:
   flutter_test:

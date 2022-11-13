@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:proxy_test/core/proxy_helper.dart';
 import 'package:proxy_test/screens/markets/trendyol_view.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
-import 'dart:io' show HttpOverrides, Platform;
+import 'dart:io' show HttpOverrides;
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   HttpOverrides.global = ProxyHelper();
 
-  if (kIsWeb == false && Platform.isAndroid) {
-    await InAppWebViewController.setWebContentsDebuggingEnabled(true);
-  }
   runApp(const MyApp());
 }
 
